@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+
+<body>
+    <nav>
+        <img class="logo"
+            src="data:image/png;base64,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"
+            alt="Company Logo">
+
+        <ul>
+
+            <li>About</li>
+            <li>Services</li>
+            <li>Home</li>
+            <li>Contact</li>
+        </ul>
+        <div class="div_span">
+            
+            <span>&#9776;</span>
+        </div>
+    </nav>
+    <div>
+        <div class="hero">
+            <img src="https://c0.wallpaperflare.com/preview/931/296/849/business-idea-planning-board-business-plan.jpg"
+                alt="">
+
+
+
+        </div>
+
+    </div>
+    <div id="main_continer">
+        <div id="registration_form">
+            <h1>Registration form</h1>
+            <form id="form">
+                <input type="text"
+                    id="name"
+                    placeholder="Name"><br>
+                <input type="email"
+                    id="email"
+                    placeholder="email"><br>
+                <input type="number"
+                    id="number"
+                    placeholder="number"><br>
+                <button id="btn">
+                    submit
+                </button>
+            </form>
+        </div>
+        <div id="registration_table">
+            <h1>Student Details</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>s.no</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Number</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h2><u>Contact Us</u></h2>
+                <p>Phone: 0141-456-7890</p>
+                <p>Email: info@adventuretours.com</p>
+                <p> Mohit Education PVT Ltd. lalkhoti Jaipur</p>
+            </div>
+            <div class="footer-column">
+                <h2> <u>About Us</u></h2>
+                <p>Giving Wings to Meet Your Goals</p>
+            </div>
+            <div class="footer-column">
+                <h2><u>Policy</u></h2>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li><br><br>
+                    <li><a href="#">Terms of Service</a></li><br><br>
+                    <li><a href="#">Cancellation Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let arr = JSON.parse(localStorage.getItem("user")) || []
+    let form = document.getElementById("form")
+    let btn = document.getElementById("btn")
+    let nameInput = document.getElementById("name")
+    let emailInput = document.getElementById("email")
+    let numberInput = document.getElementById("number")
+    let tbody = document.getElementById("tbody")
+
+    btn.addEventListener("click", getData)
+
+    function getData (e) {
+        e.preventDefault()
+        let obj = {
+            name: nameInput.value,
+            email: emailInput.value,
+            number: numberInput.value
+        }
+        arr.push(obj)
+        localStorage.setItem("user", JSON.stringify(arr))
+        displayData(arr)
+        form.reset()
+    }
+
+    function displayData (arr) {
+        tbody.innerHTML = "";
+        arr.forEach((item, index) => {
+            index++
+            let tr = document.createElement("tr")
+            let td = document.createElement("td")
+            td.innerHTML = index
+
+            let td1 = document.createElement("td")
+            td1.innerHTML = item.name
+            let td2 = document.createElement("td")
+            td2.innerHTML = item.email
+            let td3 = document.createElement("td")
+            td3.innerHTML = item.number
+            tr.append(td, td1, td2, td3)
+            tbody.append(tr)
+        });
+    }
+
+    displayData(arr)
+</script>
+
+
+
+</html>
